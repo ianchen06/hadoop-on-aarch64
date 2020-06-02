@@ -24,7 +24,7 @@ This documents my process of deploying Hadoop and friends on aarch64 system.
 ##### Install Dependencies
 
 ```
-sudo apt-get install -y unzip curl zip ssh vim-tiny pdsh openjdk-8-jdk zlib1g-dev libssl-dev autoconf automake libtool make g++ libsasl2-dev pkg-config
+sudo apt-get install -y libsnappy-dev net-tools maven cmake unzip curl zip ssh vim-tiny pdsh openjdk-8-jdk zlib1g-dev libssl-dev autoconf automake libtool make g++ libsasl2-dev pkg-config
 
 sudo apt-get install build-essential
 ```
