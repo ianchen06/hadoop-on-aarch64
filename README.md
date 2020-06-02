@@ -17,13 +17,29 @@ This documents my process of deploying Hadoop and friends on aarch64 system.
 
 #### Building native extensions
 
-1. Need to build protobuf 2.5
+1. Dependencies
+1. Protobuf 2.5
+1. Hadoop
+
+##### Install Dependencies
+
+```
+sudo apt-get install -y unzip curl zip ssh vim-tiny pdsh openjdk-8-jdk zlib1g-dev libssl-dev autoconf automake libtool make g++ libsasl2-dev pkg-config
+
+sudo apt-get install build-essential
+```
 
 ##### Protobuf
 
 1. Protobuf 2.5 does not support building on aarch64
 1. Apply the following patch to workaround
 1. https://gist.github.com/BennettSmith/7111094
+
+##### Patch Hadoop 2.10.0
+
+Hadoop 2.x does not build with OpenSSL 1.1.1 (only OpenSSL 1.0.2, which is EOL, not installable on ubuntu 20.04)
+
+1. https://issues.apache.org/jira/browse/HADOOP-16647
 
 #### Configuration
 
