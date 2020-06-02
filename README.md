@@ -59,3 +59,5 @@ Hadoop 2.x does not build with OpenSSL 1.1.1 (only OpenSSL 1.0.2, which is EOL, 
 1. https://qiita.com/thashi/items/f8884b78df3faa5ff887
 1. https://scito.ch/content/mysql-57-docker-container-raspberry-pi-using-debian-sid
 1. https://www.linode.com/docs/databases/hadoop/how-to-install-and-set-up-hadoop-cluster/#architecture-of-a-hadoop-cluster
+1. https://github.com/dvoros/docker-hive
+1. https://dev.to/awwsmm/building-a-raspberry-pi-hadoop-spark-cluster-8b2
